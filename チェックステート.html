@@ -62,14 +62,12 @@
       // checkbox.indeterminate = true;
       // checkbox.indeterminate = false;
 
-      checkbox.checked = true;
-      checkbox.indeterminate = true;
-
-      if(checkbox.checked) {
-        checkbox;
-      } else if(checkbox.indeterminate) {
-        checkbox;
+      if(checked) {
+        checkbox.checked = true;
+      } else if(indeterminate === false) {
+        checkbox.indeterminate = true;
       }
+
     });
   </script>
 </body>
